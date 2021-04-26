@@ -50,8 +50,6 @@ def f1_test(sample_x, sample_y, larger_varx_alt):
             True if alternative hypothesis is ox^2 > oy^2. False if ox^2 < oy^2. 
 
     Returns:
-        f_value : float
-            Sx^2 / Sy^2 as defined in 'A Quick, Compact, Two-Sample Dispersion Test: Count Five'.
         p_value : 
             Let F be the F-distribution with rx, ry df as specified in equation (1) of 'Fixing the F Test for Equal Variances'. 1 - P(F < f_value) if larger_varx_alt = True, P(F < f_value) otherwise. 
     """
