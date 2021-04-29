@@ -91,18 +91,18 @@ def count_five(sample_x, sample_y, center):
 
     Parameters
     ----------
-        sample_x : list
-            A random sample x1,...,xn. 
-        sample_y : list
-            A random sample y1,...,ym.
-        center : str
-            Whether to use 'mean' or 'median' for centering. 
+    sample_x : list
+        A random sample x1,...,xn. 
+    sample_y : list
+        A random sample y1,...,ym.
+    center : str
+        Whether to use 'mean' or 'median' for centering. 
     Returns
     -------
-        extreme_count_x : int
-            C_x computed with centering mu being sample mean if center = 'mean' and sample median if center = 'median' as defined in equation (1) of 'A Quick, Compact, Two-Sample Dispersion Test: Count Five'.
-        extreme_count_y : int
-            C_y defined analogously to C_x above.
+    extreme_count_x : int
+        C_x computed with centering mu being sample mean if center = 'mean' and sample median if center = 'median' as defined in equation (1) of 'A Quick, Compact, Two-Sample Dispersion Test: Count Five'.
+    extreme_count_y : int
+        C_y defined analogously to C_x above.
     Raises
     ------
     ValueError
