@@ -19,7 +19,7 @@ def f_test(sample_x, sample_y, larger_varx_alt):
     -------
     f_value : float
         Sx^2 / Sy^2 as defined in 'A Quick, Compact, Two-Sample Dispersion Test: Count Five'.
-    p_value : 
+    p_value : float
         Let F be the F-distribution with nx, ny df. 1 - P(F < f_value) if larger_varx_alt = True, P(F < f_value) otherwise. More extreme F = Sx^2 / Sy^2 values for alternative ox^2 > oy^2 are to the right. More extreme F values for ox^2 < oy^2 are to the left. 
     """
 
@@ -54,7 +54,7 @@ def f1_test(sample_x, sample_y, larger_varx_alt):
 
     Returns
     -------
-    p_value : 
+    p_value : float
         Let F be the F-distribution with rx, ry df as specified in equation (1) of 'Fixing the F Test for Equal Variances'. 1 - P(F < f_value) if larger_varx_alt = True, P(F < f_value) otherwise. 
     """
 
@@ -91,18 +91,18 @@ def count_five(sample_x, sample_y, center):
 
     Parameters
     ----------
-        sample_x : list
-            A random sample x1,...,xn. 
-        sample_y : list
-            A random sample y1,...,ym.
-        center : str
-            Whether to use 'mean' or 'median' for centering. 
+    sample_x : list
+        A random sample x1,...,xn. 
+    sample_y : list
+        A random sample y1,...,ym.
+    center : str
+        Whether to use 'mean' or 'median' for centering. 
     Returns
     -------
-        extreme_count_x : int
-            C_x computed with centering mu being sample mean if center = 'mean' and sample median if center = 'median' as defined in equation (1) of 'A Quick, Compact, Two-Sample Dispersion Test: Count Five'.
-        extreme_count_y : int
-            C_y defined analogously to C_x above.
+    extreme_count_x : int
+        C_x computed with centering mu being sample mean if center = 'mean' and sample median if center = 'median' as defined in equation (1) of 'A Quick, Compact, Two-Sample Dispersion Test: Count Five'.
+    extreme_count_y : int
+        C_y defined analogously to C_x above.
     Raises
     ------
     ValueError
