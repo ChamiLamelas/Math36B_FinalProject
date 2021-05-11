@@ -1,8 +1,8 @@
 ﻿
 # Important Links
 
-* [https://www.jstor.org/stable/27643615](The Paper on JSTOR)
-* [https://colab.research.google.com/drive/1bUGJVALhi2YsFAqSIgkcEGQpx9e1zBSN?usp=sharing](Google Colab Notebook with Simulations)
+* [The Paper on JSTOR](https://www.jstor.org/stable/27643615)
+* [Google Colab Notebook with Simulations](https://colab.research.google.com/drive/1bUGJVALhi2YsFAqSIgkcEGQpx9e1zBSN?usp=sharing)
 
 # Repository Description
 
